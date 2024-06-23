@@ -1,0 +1,26 @@
+.BlogTitle {
+    float: left;
+    height: 95vh;
+    width: 49vw;
+    border-right: solid 2px;
+}
+
+.dot {
+    height: 400px;
+    width: 400px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+
+.Form {
+    float: right;
+    height: 95vh;
+    width: 49vw;
+    border-left: solid 2px;
+}
+
+main {
+    border: solid;
+}
