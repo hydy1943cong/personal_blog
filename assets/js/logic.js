@@ -19,10 +19,14 @@ submit.addEventListener('click', function (event) {
       } else if (content.value === '') {
         alert('Content cannot be blank');
       } else {
-        localStorage.setItem('bloginfo', JSON.stringify(bloginfo));
+        let blogEntries = JSON.parse(localStorage.getItem('blogEntries'))|| [];
+        blogEntries.push(bloginfo);
+        localStorage.setItem ('blogEntries',JSON.stringify(blogEntries));
+        username.value="";
+        title.value="";
+        content.value="";
         location.replace("blog.html");
-      };
-      
+      };  
     }
 )
 
