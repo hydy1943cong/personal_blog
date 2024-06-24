@@ -11,8 +11,14 @@ back.addEventListener('click', function (event) {
 mode.addEventListener('click',function(event) {
     event.preventDefault();
     document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")){
+    document.getElementById("mode").innerHTML = "Light Mode";
+}
+else {  document.getElementById("mode").innerHTML = "Dark Mode";}
 }
 )
+
+
 
 function displayblogContent() {
     const blogContent = JSON.parse(localStorage.getItem('bloginfo'));    

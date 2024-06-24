@@ -1,26 +1,64 @@
+#modeMain {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+}
 .BlogTitle {
     float: left;
     height: 95vh;
     width: 49vw;
     border-right: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.dot {
-    height: 400px;
-    width: 400px;
-    background-color: #bbb;
+.title {
+    border: solid;
+    padding: 120px;
     border-radius: 50%;
-    display: inline-block;
-    
-  }
+    font-size: 50px; 
+    height: 30vh;
+    width: 20vw;
+    text-align: center;
+}
 
 .Form {
     float: right;
     height: 95vh;
     width: 49vw;
     border-left: solid 2px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 
 main {
     border: solid;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#content {
+    height: 100px;
+    width: 300px;
+}
+
+#username {
+    height: 30px;
+    width: 300px;
+}
+
+#title {
+    height: 30px;
+    width: 300px;
+}
+
+#grad1 {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow);
+  }
