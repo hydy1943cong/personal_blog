@@ -1,5 +1,5 @@
 const back=document.querySelector('#back');
-const author=document.querySelector('#username');
+const mainElement = document.querySelector('main');
 
 back.addEventListener('click', function (event) {
     event.preventDefault();
@@ -14,10 +14,7 @@ function displayblogContent() {
     const blogAuthorElement = document.createElement('p');
     blogContentElement.innerHTML += `<h2>Title: ${blogContent.title}</h2>`;
     blogContentElement.innerHTML += `<p>Content: ${blogContent.content}</p>`; 
-    blogContentElement.innerHTML += `<p>Uploaded by: ${blogContent.username}</p>`; 
-
-    // Choose where to display the content (replace with your desired location)
-    const mainElement = document.querySelector('main');
+    blogContentElement.innerHTML += `<p>Uploaded by: ${blogContent.username}</p>`;   
     mainElement.appendChild(blogContentElement);
   } 
 
