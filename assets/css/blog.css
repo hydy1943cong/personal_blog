@@ -1,3 +1,20 @@
+header {
+    display: flex;
+    border-bottom: double 5px;
+    padding: 5px;
+    justify-content: flex-end; 
+}
+#blogheader {
+    flex-grow: 1;  
+}
+
+#back {
+    justify-content: flex-end; 
+}
+
+#mode {
+    justify-content: flex-end; 
+}
 .dark-mode {
     background-color: black;
     color: white;
@@ -6,8 +23,26 @@
 footer {
     background-color: blueviolet;
     color: white;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+footer p {
+    text-align: center;
 }
 
 footer a {
     color: white;
+    text-align: left;
+}
+
+.blogEntry div{
+  border: solid 2px black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.blogEntry h2 {
+    border-bottom: solid 2px;
 }

@@ -44,21 +44,21 @@ main {
 }
 
 #content {
-    height: 100px;
-    width: 300px;
+    height: 80px;
+    width: 600px;
 }
 
 #username {
     height: 30px;
-    width: 300px;
+    width: 600px;
 }
 
 #title {
     height: 30px;
-    width: 300px;
+    width: 600px;
 }
 
 #grad1 {
-    background-color: red; /* For browsers that do not support gradients */
+    background-color: red; 
     background-image: linear-gradient(red, yellow);
   }

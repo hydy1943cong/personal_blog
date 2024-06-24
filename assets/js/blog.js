@@ -23,13 +23,23 @@ else {  document.getElementById("mode").innerHTML = "Dark Mode";}
 function displayblogContent() {
   let blogEntries=JSON.parse(localStorage.getItem('blogEntries'));
     for (const entry of blogEntries) {
-    const blogEntriesElement = document.createElement('div'); 
-    const blogAuthorElement = document.createElement('p');
-    blogEntriesElement.innerHTML += `<h2>Title: ${entry.title}</h2>`;
-    blogEntriesElement.innerHTML += `<p>Content: ${entry.content}</p>`; 
-    blogEntriesElement.innerHTML += `<p>Uploaded by: ${entry.username}</p>`;  
-    mainElement.appendChild(blogEntriesElement);
-    }  
-  } 
-
+      const blogEntryElement = document.createElement('div'); 
+      blogEntryElement.classList.add('blogEntry'); 
+  
+      const blogTitleElement = document.createElement('h2');
+      blogTitleElement.textContent = `Title: ${entry.title}`;
+      blogEntryElement.appendChild(blogTitleElement);
+  
+      const blogContentElement = document.createElement('p');
+      blogContentElement.textContent = `Content: ${entry.content}`;
+      blogEntryElement.appendChild(blogContentElement);
+  
+      const blogAuthorElement = document.createElement('p');
+      blogAuthorElement.textContent = `Posted by: ${entry.username}`;
+      blogEntryElement.appendChild(blogAuthorElement);
+  
+      mainElement.appendChild(blogEntryElement);
+    }
+  }
+  
 displayblogContent();
