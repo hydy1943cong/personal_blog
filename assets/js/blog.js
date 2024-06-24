@@ -1,5 +1,6 @@
 const back=document.querySelector('#back');
 const mainElement = document.querySelector('main');
+const mode=document.querySelector('#mode');
 
 back.addEventListener('click', function (event) {
     event.preventDefault();
@@ -7,6 +8,11 @@ back.addEventListener('click', function (event) {
     }
 )
 
+mode.addEventListener('click',function(event) {
+    event.preventDefault();
+    document.body.classList.toggle("dark-mode");
+}
+)
 
 function displayblogContent() {
     const blogContent = JSON.parse(localStorage.getItem('bloginfo'));    
